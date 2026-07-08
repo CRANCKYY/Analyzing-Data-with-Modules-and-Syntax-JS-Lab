@@ -20,22 +20,5 @@ function combineUsers(...arrays) {
         merge_date: mergeDate
     };
 }
-//Call the function to see output
-const result = combineUsers(
-    ['alice','bob','charlie'],
-    ['dave','eve','frank'],
-    ['grace','heldi','ivan']
-);
-console.log('Result:');
-console.log(result);
-
-//Show just the users array
-console.log('\nMerged Users:');
-console.log(result.users);
-
-//Show the date
-console.log('\nMerge Date:');
-console.log(result.merge_date);
-
 //Export the function for testing
 module.exports = {combineUsers};
